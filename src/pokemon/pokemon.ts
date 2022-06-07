@@ -8,7 +8,7 @@ export const getPokemon = async (name: string | number): Promise<Pokemon> => {
     return new Promise((res, rej) => {
       const item = pokemonCache.get(name);
       if (item) {res(item);}
-      else {rej('Item not found in cache but still got ehre? l0l');}
+      else {rej('Item not found in cache but still got here? l0l');}
     });
   }
 
