@@ -24,10 +24,10 @@ test('Ensure successful parsing firmness with id', async () => {
 
 test('Ensure successful parsing flavor with name', async () => {
   const flavor = await berry.getFlavor('spicy');
-  expect(flavor.flavor).toBe('very-soft');
+  expect(flavor.name).toBe('spicy');
 });
   
 test('Ensure successful parsing flavor with id', async () => {
-  const firmness = await berry.getFirmness(1);
-  expect(firmness.name).toBe('very-soft');
+  const flavor = await berry.getFlavor(1);
+  expect(flavor.name).toBe('spicy');
 });

@@ -17,6 +17,6 @@
     "node-fetch": "2"
   },
   "scripts": {
-    "test": "tsc && jest dist/test"
+    "test": "jest"
   }
 }

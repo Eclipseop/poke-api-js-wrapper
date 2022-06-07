@@ -1,4 +1,6 @@
-import { Berry, Firmness, Flavor } from 'berry';
+import { Berry } from 'berry';
+import { Firmness } from 'berry-firmness';
+import { Flavor } from 'berry-flavor';
 import fetch from 'node-fetch';
 
 const berryCache: Map<string | number, Berry> = new Map();

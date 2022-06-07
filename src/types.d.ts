@@ -212,3 +212,47 @@ declare module 'berry' {
     potency: number;
   }
 }
+
+declare module 'berry-firmness' {
+  export interface Firmness {
+    id:      number;
+    name:    string;
+    berries: Berry[];
+    names:   Name[];
+  }
+
+  export interface Berry {
+    name: string;
+    url:  string;
+  }
+
+  export interface Name {
+    name:     string;
+    language: Berry;
+  }
+}
+
+declare module 'berry-flavor' {
+  export interface Flavor {
+    id:           number;
+    name:         string;
+    berries:      Berry[];
+    contest_type: ContestType;
+    names:        Name[];
+  }
+
+  export interface Berry {
+    potency: number;
+    berry:   ContestType;
+  }
+
+  export interface ContestType {
+    name: string;
+    url:  string;
+  }
+
+  export interface Name {
+    name:     string;
+    language: ContestType;
+  }
+}
