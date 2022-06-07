@@ -1,0 +1,22 @@
+{
+  "name": "poke-api-js-wrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/node-fetch": "2",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.17.0",
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.4",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "node-fetch": "2"
+  },
+  "scripts": {
+    "test": "tsc && jest dist/test"
+  }
+}
